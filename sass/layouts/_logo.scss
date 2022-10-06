@@ -1,0 +1,29 @@
+.logo {
+  display: block;
+  margin-bottom: 20px;
+  align-items: center;
+
+  color: var(--color-of-efect);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.logo--light {
+  margin-bottom: 0;
+  margin-right: 93px;
+}
+
+.logo__studio--black {
+  color: var(--black);
+}
+
+.logo__studio--white {
+  color: var(--white);
+}
