@@ -50,8 +50,8 @@
 
 .js-close-menu {
   position: absolute;
-   top: 0;
-   left: 0;
+   top: 21px;
+  right: 25px;
   
   &:hover,
   &:focus {
@@ -135,17 +135,13 @@
     flex-wrap: wrap;
   }
 }
-
 .mobile-menu__socials-item {
-   &::after {
-       margin-left: 10px;
-    top: 0;
-    display: block;
-    content: "";
-  }
+margin-right: 10px;
+
+&:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-
-
+}
 
 .mobile-menu__socials-link {
   width: 100%;
@@ -156,6 +152,4 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--color-of-efect);
-
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

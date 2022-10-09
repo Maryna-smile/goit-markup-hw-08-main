@@ -103,6 +103,10 @@ body {
 }
 
 /* components */
+.js-menu-container {
+  position: fixed;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -126,8 +130,7 @@ body {
 .menu-toggle {
   width: 40px;
   height: 40px;
-  right: 25px;
-  position: absolute;
+  right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,7 +151,12 @@ body {
   }
 }
 
-.js-close-menu::hover .menu-close-icon, .js-close-menu::focus .menu-close-icon {
+.js-close-menu {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+}
+.js-close-menu:hover .menu-close-icon, .js-close-menu:focus .menu-close-icon {
   color: var(--color-of-efect);
 }
 
@@ -176,8 +184,11 @@ body {
   color: var(--color-of-efect);
 }
 
+.mobile-menu__margin {
+  margin-top: 302px;
+}
+
 .mobile-menu__contacts {
-  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -224,18 +235,13 @@ body {
 }
 
 .mobile-menu__socials-item {
-  position: relative;
+  margin-right: 10px;
 }
-.mobile-menu__socials-item::after {
-  position: absolute;
-  margin-left: 10px;
-  top: 0;
-  display: block;
-  content: "";
+.mobile-menu__socials-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-menu__socials-link {
-  position: relative;
   width: 100%;
   margin-right: 10px;
   font-family: var(--main-font);
@@ -244,7 +250,6 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--color-of-efect);
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .social-networks {
