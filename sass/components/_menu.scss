@@ -1,3 +1,11 @@
+
+// .backdrop {
+// position: relative;
+// }
+.js-menu-container {
+  position: fixed;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -19,9 +27,11 @@
 .menu-toggle {
   width: 40px;
   height: 40px;
-  // top: 21px;
-  right: 25px;
-  position: absolute;
+  // top:21px;
+  right: 50px;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,8 +49,12 @@
 }
 
 .js-close-menu {
-  &::hover,
-  &::focus {
+  position: absolute;
+   top: 0;
+   left: 0;
+  
+  &:hover,
+  &:focus {
     .menu-close-icon {
       color: var(--color-of-efect);
     }
@@ -74,11 +88,11 @@
 }
 
 .mobile-menu__margin {
-  // margin-top: auto;
+ margin-top: 302px;
 }
 
 .mobile-menu__contacts {
-  margin-top: auto;
+ 
   margin-bottom: 64px;
 }
 
@@ -123,12 +137,8 @@
 }
 
 .mobile-menu__socials-item {
-  position: relative;
-
-  &::after {
-    position: absolute;
-
-    margin-left: 10px;
+   &::after {
+       margin-left: 10px;
     top: 0;
     display: block;
     content: "";
@@ -138,7 +148,6 @@
 
 
 .mobile-menu__socials-link {
-  position: relative;
   width: 100%;
   margin-right: 10px;
   font-family: var(--main-font);
