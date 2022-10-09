@@ -737,6 +737,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
+        class="menu-close-icon"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -750,52 +751,51 @@
           ></path>
         </svg>
       </button>
-      <div class="nav__menu">
-        <ul class="mobile-menu">
-          <li class="nav__item">
-            <a href="./index.html" class="link nav__link nav__link--current"
+      <div class="mobile-menu">
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__nav-item">
+            <a href="./index.html" class="link mobile-menu__nav-link mobile-menu__nav-link--current"
               >Студія</a
             >
           </li>
-          <li class="nav__item">
-            <a href="./portfolio.html" class="link nav__link">Портфоліо</a>
+          <li class="mobile-menu__nav-item">
+            <a href="./portfolio.html" class="link mobile-menu__nav-link">Портфоліо</a>
           </li>
-          <li class="nav__item">
-            <a href="" class="link nav__link">Контакти</a>
+          <li class="mobile-menu__nav-item">
+            <a href="" class="link mobile-menu__nav-link">Контакти</a>
+          </li>
+        </ul>
+      
+      <div class="mobile-menu__margin">
+        <ul class="list mobile-menu__contacts">
+          <li class="item mobile-menu__contacts-item ">
+            <a href="tel:+380961111111" class="mobile-menu__contacts-link1">
+             +38 096 111 11 11</a>
+          </li>
+          <li class="item mobile-menu__contacts-item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link2">
+              info@devstudio.com</a>
+          </li>
+         
+        </ul>
+  
+        <ul class="mobile-menu__socials list">
+          <li class="mobile-menu__socials-item">
+            <a class="link mobile-menu__socials-link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="link mobile-menu__socials-link" href="#">Twitter</a>
+          </li>
+           <li class="mobile-menu__socials-item">
+            <a class="link mobile-menu__socials-link" href="#">Facebook</a>
+          </li>     
+          <li class="mobile-menu__socials-item">
+            <a class="link mobile-menu__socials-link" href="#">LinkedIn</a>
           </li>
         </ul>
       </div>
-      <ul class="list contacts">
-        <li class="item contacts__item">
-          <a href="mailto:info@devstudio.com" class="contact contacts__link">
-            <svg class="contacts__icon mail" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="item contacts__item">
-          <a href="tel:+380961111111" class="contact contacts__link">
-            <svg class="contacts__icon tel" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use></svg
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-
-      <ul class="header__socials list">
-        <li class="">
-          <a class="link" href="#">Instagra</a>
-        </li>
-        <li class="">
-          <a class="link" href="#">Twitter</a>
-        </li>
-
-        <li class="">
-          <a class="link" href="#">LinkedIn</a>
-        </li>
-      </ul>
     </div>
-
+  </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
